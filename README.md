@@ -23,17 +23,18 @@ The goal of this SQL Bookstore Project create a robust MS SQL database system ta
 
 ```bash
 docker pull mcr.microsoft.com/mssql/server
-docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=YourStrongPasswordHere' -p 1433:1433 --name sql_server -d mcr.microsoft.com/mssql/server
+docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=YourStrongPasswordHere' -p 1433:1433 --name sql_server -d mcr.microsoft.com/mssql/server 
+```
 
-Connecting to the Database:
+### Connecting to the Database:
 
-Open Azure Data Studio.
-Click on New Connection.
-Select Microsoft SQL Server as the connection type.
-For the server, input localhost.
-Authentication type: Select SQL Login.
-Enter sa as the username.
-Use the password you set (YourStrongPasswordHere) in the Docker run command.
-Click Connect.
+1. Open **Azure Data Studio**.
+2. Click on **New Connection**.
+3. Select **Microsoft SQL Server** as the connection type.
+4. For the server, input **localhost**.
+5. Authentication type: Select **SQL Login**.
+6. Enter **sa** as the username.
+6. Use the password you set (**YourStrongPasswordHere**) in the Docker run command.
+7. Click **Connect**.
 After connecting, you're all set to execute the SQL scripts provided in this repository.
 
